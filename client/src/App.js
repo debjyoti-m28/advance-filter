@@ -5,7 +5,7 @@ import { Users } from './users';
 function App() {
   const [query, setquery] =useState("");
 
-  console.log(Users.filter(user => user.first_name.toLowerCase().includes(query)));
+  // console.log(Users.filter(user => user.first_name.toLowerCase().includes("fe")));
   return (
     <div className="App">
       <input className='search'
@@ -14,7 +14,7 @@ function App() {
        onChange={e=>setquery(e.target.value)}
        ></input>
       <ul className='list'>
-        {Users.map(user =>
+        {Users.filter(user=> user.first_name.toLowerCase().includes(query)).map(user =>
           <li key={user.id} className='listItem'>{user.first_name}</li>
           )}
       </ul>
