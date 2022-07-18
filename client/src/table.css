@@ -1,0 +1,14 @@
+th{
+    font-size: 20px;
+    padding: 10px 50px;
+}
+td{
+    font-size: 18px;
+    padding: 10px 45px;
+    padding-right: 10px;
+}
+tr{
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+}
