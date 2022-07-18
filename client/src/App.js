@@ -14,7 +14,7 @@ function App() {
        onChange={e=>setquery(e.target.value)}
        ></input>
       <ul className='list'>
-        {Users.filter(user=> user.first_name.toLowerCase().includes(query)).map(user =>
+        {Users.filter(user=> user.first_name.toLowerCase().startsWith(query)).map(user =>
           <li key={user.id} className='listItem'>{user.first_name}</li>
           )}
       </ul>
