@@ -4191,6 +4191,8 @@ __metadata:
     axios: ^0.27.2
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-hotkeys: ^2.0.0
+    react-hotkeys-hook: ^4.0.3
     react-scripts: 5.0.1
     web-vitals: ^2.1.4
   languageName: unknown
@@ -8153,7 +8155,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
+"lodash@npm:4.17.21, lodash@npm:^4.17.15, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.7.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -10066,7 +10068,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.1, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10230,6 +10232,30 @@ __metadata:
   version: 6.0.11
   resolution: "react-error-overlay@npm:6.0.11"
   checksum: ce7b44c38fadba9cedd7c095cf39192e632daeccf1d0747292ed524f17dcb056d16bc197ddee5723f9dd888f0b9b19c3b486c430319e30504289b9296f2d2c42
+  languageName: node
+  linkType: hard
+
+"react-hotkeys-hook@npm:^4.0.3":
+  version: 4.0.3
+  resolution: "react-hotkeys-hook@npm:4.0.3"
+  dependencies:
+    lodash: 4.17.21
+  peerDependencies:
+    lodash: ">=4.17.0"
+    react: ">=16.8.1"
+    react-dom: ">=16.8.1"
+  checksum: a83e24143944290a62d7ecb25d5a9b7499df421a09f96d47a60c8add0c2d7e2d5a2a139b8c388bdaa74c58823db78fff89e783ad48fe47371d7cc0ee68edebc2
+  languageName: node
+  linkType: hard
+
+"react-hotkeys@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "react-hotkeys@npm:2.0.0"
+  dependencies:
+    prop-types: ^15.6.1
+  peerDependencies:
+    react: ">= 0.14.0"
+  checksum: 1b269159cbae45d8712369a187fb708dc89d0227cd91bdaa83509587e10bd3c5409d8828c5ced7fe0636088de4d63248a6df16e92493d0d89ecaa59e661da5dd
   languageName: node
   linkType: hard
 
