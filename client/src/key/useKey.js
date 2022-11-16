@@ -9,8 +9,9 @@ function useKey(key, cb) {
 
   useEffect(() => {
     function handle(event){
-      if(event.code === key){
+      if(event.ctrlKey && event.code === key){
           if(event.repeat)return;
+          event.preventDefault();
           callbackRef.current(event)
       }
     }
